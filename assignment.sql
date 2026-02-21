@@ -1,9 +1,3 @@
-
-DROP DATABASE IF EXISTS blog;
-CREATE DATABASE blog;
-USE blog;
-
-
 CREATE TABLE tbl_admin (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
@@ -26,16 +20,14 @@ CREATE TABLE tbl_posts (
 );
 
 
-
 CREATE TABLE tbl_contact (
     id INT AUTO_INCREMENT PRIMARY KEY,
     sender_name VARCHAR(100),
     sender_phone VARCHAR(20),
     sender_email VARCHAR(150),
     message_content TEXT,
-    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-
 
 
 INSERT INTO tbl_contact 
@@ -98,4 +90,3 @@ This helps create fast and responsive applications.',
 'Admin',
 'async-javascript-guide');
 
-ALTER TABLE tbl_contact ADD date TIMESTAMP DEFAULT CURRENT_TIMESTAMP;

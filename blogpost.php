@@ -1,7 +1,7 @@
 <?php
 // Include config
-include('includes/config.php');
-
+include('config.php');
+include('navbar.php');
 // Check slug safely
 $slug = isset($_GET['post']) ? $_GET['post'] : '';
 
@@ -29,12 +29,12 @@ if($slug != ''){
 
 <body>
 
-<?php include('includes/navbar.php'); ?>
+<?php include('navbar.php'); ?>
 
 <?php if(!$data){ ?>
 
     <!-- ERROR SHOW -->
-    <?php include("includes/error.php"); ?>
+    <?php include("error.php"); ?>
 
 <?php } else { ?>
 
@@ -73,7 +73,7 @@ By <?php echo $data['post_author']; ?> -
 
 <?php } ?>
 
-<?php include('includes/footer.php'); ?>
+<?php include('footer.php'); ?>
 
 </body>
 </html>

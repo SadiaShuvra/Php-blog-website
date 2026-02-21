@@ -5,6 +5,8 @@ ob_start();
 
 //Importing The Config File Of The site
 include "../includes/config.php";
+$msg="";
+$col="";
 
 //Handle The Post Request
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
@@ -158,11 +160,11 @@ white-space: nowrap;
 <body class="text-center">
 
 <main class="form-signin w-100 m-auto">
-<form method="POST" action="<?php echo $_SEVER['PHP_SELF ']; ?>">
+<form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 <img class="mb-4" src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
 <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 <p class="text-<?php echo $col; ?>">
-<?php echo $msg; ?>
+<?php echo $msg;?>
 </p>
 <div class="form-floating">
 <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email" required>
@@ -176,7 +178,7 @@ white-space: nowrap;
 
 <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
 <p class="mt-5 mb-3 text-muted">
-&copy; 2017–2022
+&copy; Code Helper
 </p>
 </form>
 </main>

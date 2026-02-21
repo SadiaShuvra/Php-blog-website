@@ -1,5 +1,5 @@
 <?php
-include('includes/config.php');
+include('config.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +20,7 @@ include('includes/config.php');
 </head>
 <body>
 <!-- Navigation-->
-<?php include('includes/navbar.php'); ?>
+<?php include('navbar.php'); ?>
 <!-- Page Header-->
 <header class="masthead" style="background-image: url('assets/img/about-bg.jpg')">
 <div class="container position-relative px-4 px-lg-5">
@@ -56,7 +56,7 @@ So join us on this journey of continuous learning and improvement. Subscribe to 
 </div>
 </main>
 <!-- Footer-->
-<?php include('includes/footer.php'); ?>
+<?php include('footer.php'); ?>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->

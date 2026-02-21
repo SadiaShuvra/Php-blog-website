@@ -1,5 +1,5 @@
 <?php
-include('includes/config.php'); // Including The Config File
+include('config.php'); // Including The Config File
 
 //Handling Form Request
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
@@ -53,7 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <body>
 <!-- Navigation-->
 <?php
-include('includes/navbar.php');
+include('navbar.php');
 ?>
 <!-- Page Header-->
 <header class="masthead" style="background-image: url('assets/img/contact-bg.jpg')">
@@ -111,7 +111,7 @@ A message is required.
 </main>
 <!-- Footer-->
 <?php
-include('includes/footer.php');
+include('footer.php');
 ?>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,11 +1,9 @@
 <?php
 session_start();
 //Import The Confif File
-include("../includes/config.php");
-
+include("../config.php");
 checksession ();
-
-$limit = 2; //Record Limit Per Page
+$limit = 5; //Record Limit Per Page
 
 //Get The Page No. From Post Request
 if (isset($_POST['page_no'])) {
@@ -16,7 +14,7 @@ if (isset($_POST['page_no'])) {
 
 //Fetch The Data From Datbase
 
-$sql = "SELECT * FROM tbl_posts LIMIT {$page},$limit"; //SQL Command
+$sql = "SELECT * FROM tbl_contact LIMIT {$page},$limit"; //SQL Command
 $query = $conn->query($sql); //SQL Query
 
 //Show The Data
@@ -25,20 +23,16 @@ if ($query->num_rows > 0) {
 
   while ($row = $query->fetch_assoc()) {
     $last_id = $row['id']; //Getting The Last row Id
-
-    $cont = substr($row['post_content'], 0, 50); //Slice The Post Content
     $output .= "<tr>
 <th scope='row'>{$row['id']}</th>
-<td>{$row['post_title']}</td>
-<td>$cont...........</td>
-<td>{$row['post_author']}</td>
-<td>{$row['post-slug']}</td>
-<td>{$row['post_header']}</td>
-<td>{$row['post_date']}</td>
-<td><button onclick='deletepost({$row['id']})' class='btn btn-danger rounded'>Delete</button></td>
+<td>{$row['sender_name']}</td>
+<td>{$row['sender_phone']}</td>
+<td>{$row['sender_email']}</td>
+<td>{$row['message_content']}</td>
+<td>{$row['date']}</td>
 </tr>"; //Concat The Tr In Output Variable
   }
-  $output .= "<tr id='postpagination'><td><div class='btn-div'><button class='rounded m-0 p-1' id='postbtn' data-id='$last_id'>Load More</button>
+  $output .= "<tr id='msgpagination'><td><div class='btn-div'><button class='rounded m-0 p-1' id='msgbtn' data-id='$last_id'>Load More</button>
 </div>
 </td>
 </tr>";

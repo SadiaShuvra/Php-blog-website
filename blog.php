@@ -1,6 +1,6 @@
 <?php
 //Including The Config Fail
-include('includes/config.php'); // Include Config File Of Site
+include('config.php'); // Include Config File Of Site
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +8,7 @@ include('includes/config.php'); // Include Config File Of Site
   <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="" />
-<meta name="author" content="Arman Idrisi" />
+<meta name="author" content="Sadia Shuvra" />
 <title>Home - <?php echo $sitename; ?></title>
 <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 <!-- Font Awesome icons (free version)-->
@@ -24,7 +24,7 @@ include('includes/config.php'); // Include Config File Of Site
 <?php
 //Including Navbar From navbar.php
 
-include('includes/navbar.php'); //Include The Navbar Component From navbar.php
+include('navbar.php'); //Include The Navbar Component From navbar.php
 ?>
 <!-- Page Header-->
 
@@ -143,7 +143,7 @@ echo"</ul>
 <?php
 //Including footer From footer.php
 
-include('includes/footer.php'); //Include The footer Component From footer.php
+include('footer.php'); //Include The footer Component From footer.php
 ?>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
