@@ -1,4 +1,4 @@
-CREATE TABLE tbl_admin (
+/*CREATE TABLE tbl_admin (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     email VARCHAR(150) NOT NULL UNIQUE,
@@ -88,5 +88,5 @@ async function loadData(){
 
 This helps create fast and responsive applications.',
 'Admin',
-'async-javascript-guide');
+'async-javascript-guide');*/
 

@@ -4,7 +4,7 @@ session_start();
 ob_start();
 
 //Importing The Config File Of The site
-include "../includes/config.php";
+include ("config.php");
 
 //Checking User Logged In or Not
 checksession();
@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
   <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 <meta name="description" content="" />
-<meta name="author" content="Arman Idrisi" />
+<meta name="author" content="Sadia Shuvra" />
 <title>Dashboard - <?php echo $sitename; ?></title>
 <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 <!-- Font Awesome icons (free version)-->
@@ -44,12 +44,12 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 </head>
 <body>
-<!-- Navigation-->
+
 <?php
-//Include The Navbar File
-include("../includes/admin-navbar.php");
+
+include("admin-navbar.php");
 ?>
-<!-- Page Header-->
+
 <header class="masthead" style="background-image: url('../assets/img/home-bg.jpg')">
 <div class="container position-relative px-4 px-lg-5">
 <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -88,16 +88,15 @@ include("../includes/admin-navbar.php");
 <!-- Footer-->
 <?php
 //Include The footer File
-include("../includes/footer.php");
+include("footer.php");
 ?>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<!--JQuery Cdn-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
-<!-- Core theme JS-->
-<script src="../js/scripts.js"></script>
+
+<script src="js/scripts.js"></script>
 </script>
 </body>
 </html>

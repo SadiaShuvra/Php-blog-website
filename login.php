@@ -4,7 +4,7 @@ session_start();
 ob_start();
 
 //Importing The Config File Of The site
-include "../includes/config.php";
+include ("config.php");
 $msg="";
 $col="";
 

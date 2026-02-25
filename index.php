@@ -1,6 +1,6 @@
 <?php
-//Including The Config Fail
-include('config.php'); // Include Config File Of Site
+
+include('config.php'); 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -47,7 +47,7 @@ include('navbar.php'); //Include The Navbar Component From navbar.php
 <div class="col-md-10 col-lg-8 col-xl-7">
 <!-- Post preview-->
 <?php
-//Fetching The Posts From Database And Showing On homepage
+
 
 $sql = "SELECT * FROM tbl_posts ORDER BY id DESC LIMIT 5";
 $query = $conn->query($sql);

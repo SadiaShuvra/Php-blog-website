@@ -1,7 +1,7 @@
 <?php
 session_start();
-//Import The Confif File
-include("../config.php");
+
+include("config.php");
 
 checksession ();
 

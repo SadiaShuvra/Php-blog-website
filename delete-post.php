@@ -4,7 +4,7 @@ session_start();
 ob_start();
 
 //Importing The Config File Of The site
-include "../config.php";
+include ("config.php");
 
 //Checking User Logged In or Not
 checksession();

@@ -108,8 +108,6 @@ echo"
 <li class='page-item'><a class='page-link' href='blog.php?page=$href'>Previous</a></li>";
 }
 
-//Creating All Number Of Buttons
-
 for ($i = 1; $i < $total_pages; $i++) {
 if ($i == $page) {
 $pagLink .= "<li class='page-item active'><a class='page-link' href='blog.php?page=$i'>$i</a></li>";
@@ -122,7 +120,7 @@ $pagLink .= "<li class='page-item'><a class='page-link' href='blog.php?page=$i'>
 echo $pagLink;
 
 
-//Adding The Next Button
+
 
 if ($page < $total_pages) {
 $pa = $page+1;
